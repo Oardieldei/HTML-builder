@@ -24,7 +24,8 @@ process.on('SIGINT', () => {
 })
 
 function exitProgram() {
-	rl.close()
+  console.log('Goodbye!')
+  rl.close()
   writeStream.end()
 
   process.exit()
