@@ -19,7 +19,7 @@ rl.on('line', (input) => {
   writeStream.write(`${input}\n`)
 })
 
-process.on('SIGINT', () => {
+rl.on('SIGINT', () => {
   exitProgram()
 })
 
